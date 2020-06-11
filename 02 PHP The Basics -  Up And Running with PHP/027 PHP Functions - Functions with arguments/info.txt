@@ -1,0 +1,24 @@
+027 PHP Functions - Functions with arguments
+
+div class="code-content">
+      <?php 
+        
+        function say_hello($name)
+        {
+          //nak call var guna ""
+          echo "hello $name<br>";
+        }
+
+        //call the function
+        say_hello('John');
+        say_hello('Mike');
+
+        function sum($a, $b)
+        {
+          echo $a+$b ."<br>";
+        }
+
+        sum(4,7);
+
+       ?>
+      </div>
