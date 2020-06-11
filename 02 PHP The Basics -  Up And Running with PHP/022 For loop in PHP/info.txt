@@ -1,0 +1,48 @@
+<div class="code-content">
+          <?php 
+            
+            for($i = 0; $i <4; $i++)
+            {
+              echo "The number is: " .$i .'<br>'; 
+            }
+
+            echo '<br>';
+
+            for($i = 0; $i <4; $i++)
+            {
+              if($i == 2)
+              {
+                echo "The number is Two!!" ."<br>";
+                continue;
+              } 
+              echo "The number is: " .$i .'<br>';
+            }
+
+            echo '<br>';
+
+            for($i = 0; $i <4; $i++)
+            {
+              
+              echo "The number is: " .$i .'<br>';
+              if($i == 2)
+              {
+                echo "The number is Two!!" ."<br>";
+                continue;
+              } 
+            }
+
+            echo '<br>';
+
+            for($i = 0; $i <4; $i++)
+            {
+              if($i == 2)
+              {
+                echo "The number is Two!!" ."<br>";
+                break; //atau exit
+              }
+              echo "The number is: " .$i .'<br>'; 
+            }
+           ?>
+
+
+          </div>
