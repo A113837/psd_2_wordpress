@@ -1,0 +1,18 @@
+<div class="code-content">
+      <?php 
+        
+        $fruits_1 = array('apple', 'banana', 'grape', 'melon', 'pear');
+
+        echo $fruits_1[0]."<br>";
+        echo $fruits_1[1]."<br>";//etc
+
+        foreach($fruits_1 as $fruit)//var $fruit utk gantikan var array $fruits_1 
+        {
+
+          echo $fruit."<br>"."<hr>";
+
+        }
+
+       ?>
+
+      </div>
