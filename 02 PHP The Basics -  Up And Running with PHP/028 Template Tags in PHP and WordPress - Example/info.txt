@@ -1,0 +1,28 @@
+028 Template Tags in PHP and WordPress - Example
+
+<div class="code-content">
+      <?php 
+        
+        //wp function
+        //the_title();
+        //the_date();
+        //the_content();
+        function the_title()
+        {
+          echo "Title of the Blogpost";
+        }
+
+        function the_date()
+        {
+          echo date('d m y');
+        }
+
+        the_title();
+        echo "<br>";
+        the_date();
+
+       ?>
+       <hr>
+       <h2><?php echo the_title(); ?></h2>
+       <p>The date is: <?php echo the_date(); ?></p>
+      </div>
