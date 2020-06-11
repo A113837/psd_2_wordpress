@@ -1,0 +1,23 @@
+026 PHP Functions - User-defined functions
+
+<div class="code-content">
+      <?php 
+        
+        function say_hello()
+        {
+          echo 'hello <br>';
+        }
+
+        //call the function
+        say_hello();
+        say_hello();
+
+        function sum()
+        {
+          echo 3+3 ."<br>";
+        }
+
+        sum();
+
+       ?>
+      </div>
