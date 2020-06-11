@@ -1,0 +1,23 @@
+<div class="code-content">
+      <?php 
+        
+        $fruits_1 = array('apple', 'banana', 'grape', 'melon', 'pear');
+
+        $i = 0;
+
+        while($i < 5)
+        {
+          echo "i = $i" ."<br>";
+          $i++;
+        }
+        echo $i."<br>";
+
+        $j = 0;
+        while($j <= count($fruits_1))
+        {
+          echo $fruits_1[$j] ."<br>";
+          $j++;
+        }
+
+       ?>
+      </div>
