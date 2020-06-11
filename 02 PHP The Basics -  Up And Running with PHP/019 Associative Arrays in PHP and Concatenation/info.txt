@@ -1,0 +1,24 @@
+019 Associative Arrays in PHP and Concatenation
+<?php 
+            
+            //beza dgn array, assoc array ada key value pairs 
+
+            $student_1 = array(
+              'firstName' => 'John',
+              'lastName' => 'Doe',
+              'country' => 'Canada'
+            );
+
+            echo $student_1['firstName']." ".$student_1['lastName'];
+
+            $student_2 = [
+              'firstName' => 'Mike',
+              'lastName' => 'Angela',
+              'country' => 'US'
+            ];
+            echo '<br>';
+            echo $student_2['firstName']." ".$student_2['lastName'];
+            echo '<pre>';
+            var_dump($student_2);
+            
+           ?>
