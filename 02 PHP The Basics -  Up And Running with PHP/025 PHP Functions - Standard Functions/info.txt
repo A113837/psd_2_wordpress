@@ -1,0 +1,22 @@
+<div class="code-content">
+      <?php 
+        $fruits_1 = array('apple', 'banana', 'grape', 'melon', 'pear');
+
+        echo count($fruits_1);
+
+        $name = "Juan Pablo Montoya";
+
+        echo "<br>";
+        echo strlen($name);
+
+        $name2 = str_replace(" ", "", $name);
+        echo "<br>";
+        echo strlen($name2);
+        echo "<br>";
+        echo $name2;
+        echo "<br>";
+        echo strtoupper($name);
+
+
+       ?>
+      </div>
