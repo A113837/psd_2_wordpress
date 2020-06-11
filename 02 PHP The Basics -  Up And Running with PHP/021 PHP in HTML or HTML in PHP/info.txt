@@ -1,0 +1,20 @@
+021 PHP in HTML or HTML in PHP
+
+div class="code-content">
+          <?php 
+            
+            //beza dgn array, assoc array ada key value pairs 
+
+            $student_1 = array(
+              'firstName' => 'John',
+              'lastName' => 'Doe',
+              'country' => 'Canada',
+              'age' => 21,
+              'user_logged_in' => true
+            );
+           ?>
+           <h1>Hello <?php echo $student_1['firstName']; ?></h1>
+
+           <?php echo "<h1>Hello ".$student_1['lastName']." </h1>"; ?>
+
+          </div>
