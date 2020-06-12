@@ -1,0 +1,41 @@
+029 PHP Functions - Functions that return values
+
+<div class="code-content">
+      <?php 
+        
+        
+        function shopping_cart_amount($amount)
+        {
+          $amount = $amount * 0.1;
+          return $amount; 
+        }
+
+        $shopping_cart = shopping_cart_amount("1000");
+
+        function bank_balance($shopping_cart)
+        {
+          $bank_balance = 2000;
+          if($shopping_cart > $bank_balance)
+          {
+            echo "You don't have enough money to pay";
+          }
+          else
+          {
+            echo "the payment was submitted";
+          }
+        }
+
+        echo $shopping_cart;
+        echo '<br>';
+        echo bank_balance($shopping_cart);
+
+       ?>
+       <hr>
+       <h2><?php echo $shopping_cart; ?></h2>
+      
+      </div>
+      
+      
+      
+      
+      
