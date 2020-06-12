@@ -1,0 +1,47 @@
+030 Math  Numbers in PHP   Some Examples
+
+ <div class="code-content">
+      <?php 
+        
+        echo 2+4;
+        echo '<br>';
+
+        for($i = 0; $i <= 10; $i++ )
+        {
+          if($i%2 == 0)
+          {
+            echo "$i is even" ."<br>"; 
+          }
+          else
+          {
+            echo "$i is odd" ."<br>";
+          }
+        }
+
+        //fizzbuz
+        for($i = 0; $i <= 10; $i++)
+        {
+           if($i %  5 == 0 && $i % 3 ==0)
+           {
+            echo "$i is fizzbuzz <br>";
+           }
+           elseif($i % 3 ==0)
+           {
+            echo "$i is fizz <br>";
+           }
+           elseif($i %  5 == 0)
+           {
+            echo "$i is buzz <br>";
+           }
+           else
+           {
+            echo "$i is int <br>";
+           }
+
+        }
+
+       ?>
+       <hr>
+       <h2></h2>
+      
+      </div>
