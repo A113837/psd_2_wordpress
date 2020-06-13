@@ -1,0 +1,85 @@
+044 Writing some CSS for global styling
+/*
+Theme Name: La Pizzeria
+Theme URL: 
+Author: Nebula
+Description: Theme for Restaurant
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: localhost
+Tags: restaurant, mobile first
+Text Domain: Lapizzeria
+
+*/
+html{
+	box-sizing: border-box;
+}
+
+/*use  below box-sizing*/
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+	font-size: 28px;
+}
+
+h4{
+	font-size: 24px;
+}
+
+.clear, .clear::after{
+	content: '' ;
+	clear: both;
+	display: block;
+}
+
+.container{
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.sr-text{
+	display: none;
+}
+
+
+<header class="site-header">
+		<div class="container">
+			<div class="logo">
+				<a href="<?php echo esc_url(home_url('/') ); ?>">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" class="logoimage">
+				</a>
+				
+			</div><!-- logo -->
+			<div class="header-information">
+				<div class="socials">
+					<?php 
+						$args = array(
+							'theme_location'	=>	'social-menu',
+							'container'			=>	'nav',
+							'container_class'	=>	'socials',
+							'container_id'		=>	'socials',
+							'link_before'		=>	'<span class = "sr-text">',
+							'link_after'		=>	'</span>'
+						);
+						wp_nav_menu($args);
+					 ?>
+				</div><!-- socials -->
+				<div class="address">
+					<p>B179 Bay Avenue Mountain View CA</p>
+					<p>Phone Number: +1-453-435-9879</p>
+				</div><!-- address -->
+			</div><!-- header-information -->		
+		</div><!-- container -->
+		
+	</header>
