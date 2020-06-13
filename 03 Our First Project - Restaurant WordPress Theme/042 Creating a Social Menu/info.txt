@@ -1,0 +1,22 @@
+042 Creating a Social Menu
+
+//add Menus
+function lapizzeria_menu()
+{
+	register_nav_menus(array(
+		'header-menu' => __('Header Menu', 'lapizzeria'),
+		'social-menu' => __('Social Menu', 'lapizzeria')
+	));
+}
+//'init is a hook in wp'
+add_action('init', 'lapizzeria_menu');
+
+<div class="header-information">
+			<div class="socials">
+				
+			</div><!-- socials -->
+			<div class="address">
+				<p>B179 Bay Avenue Mountain View CA</p>
+				<p>Phone Number: +1-453-435-9879</p>
+			</div><!-- address -->
+		</div><!-- header-information -->
