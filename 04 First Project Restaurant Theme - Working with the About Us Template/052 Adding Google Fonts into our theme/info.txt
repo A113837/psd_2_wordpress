@@ -1,0 +1,26 @@
+052 Adding Google Fonts into our theme
+
+//add google fonts
+	wp_register_style('googlefont', 'https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;1,500&display=swap', array(), '1.0.0' );
+  
+  wp_enqueue_style('googlefont');
+  
+  /
+html{
+	box-sizing: border-box;
+	font-family: 'Roboto Mono', monospace;
+}
+
+body{
+	margin: 0;
+}
+
+/*use  below box-sizing*/
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+}
