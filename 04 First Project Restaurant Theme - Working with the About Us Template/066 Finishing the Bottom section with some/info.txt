@@ -1,0 +1,10 @@
+.box-information .single-box p{
+	margin-bottom: 0;
+}
+
+.single-box .content-box{
+	padding: 10px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
