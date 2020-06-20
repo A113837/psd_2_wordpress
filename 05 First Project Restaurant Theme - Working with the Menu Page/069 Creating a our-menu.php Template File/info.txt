@@ -1,0 +1,8 @@
+069 Creating a our-menu.php Template File
+
+<?php 
+/*
+template name: Our Menu(Specialties)
+*/
+
+ ?>
